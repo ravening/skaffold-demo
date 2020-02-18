@@ -15,3 +15,6 @@ Now create a loadbalancer in kubernetes
 kubectl expose svc leeroy-app --port=8888 --target-port=50051 --name=go-load --type=LoadBalancer
 
 Add a firewall rule to allow port 8888
+
+
+Navigate to http://<PUBLIC IP of Loadbalancer>:8888/
